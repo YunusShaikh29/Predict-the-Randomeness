@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon.ico">
-    <link rel="stylesheet" href="util.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./util.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media-query.css">
     <script src="./script.js" defer></script>
-    <title>Predict the Randomeness</title>
+    <title>Predict the randomness - Class version</title>
 </head>
+
 <body>
     <main class="main">
-        <section class="  | first_section">
-            <div class="first_div">
-                <div class="restart_container">
-                    <input type="text" class="remember_result" placeholder="comma separate value w/o space">
-                    <button class="btn shadow | btn_restart ">Restart</button>
+        <section class="section section-1">
+            <div class="user_interact_container">
+                <label for="redeem">
+                    <input type="text" id="redeem" class="input | input_redeem"
+                        placeholder="Comma separated (without space)">
+                </label>
+                <button class="btn | btn_restart">Restart</button>
+            </div>
+            <div class="output_container">
+                <div class="message">Correct prediction :)</div>
+                <div class="remaining_attempts_container">Attempts remaining: 
+                    <span class="output" id="remaining_attempts">10</span>
                 </div>
-                <div class="score_container">
-                    <p class="message">Start the game by clicking a number...</p>
-                    <p>total attempts left : <span class="attempts">50</span></p>
-                    <p>Highest Score: <span id="high_score">0</span></p>
+                <div class="high_score_container">Best attempts score: <span class="output" id="high_score">0</span>
                 </div>
             </div>
         </section>
-        <section class="second_section">
-            <div class="second_div">
-                <div class="shadow flex_center | number_board">?</div>
-                <div class="numbers_container">
-                    <div class="numbers"><button class="number">1</button></div>
-                    <div class="numbers"><button class="number">2</button></div>
-                    <div class="numbers"><button class="number">3</button></div>
-                    <div class="numbers"><button class="number">4</button></div>
-                    <div class="numbers"><button class="number">5</button></div>
-                    <div class="numbers"><button class="number">6</button></div>
-                    <div class="numbers"><button class="number">7</button></div>
-                    <div class="numbers"><button class="number">8</button></div>
-                    <div class="numbers"><button class="number">9</button></div>
-                    <div class="numbers"><button class="number">10</button></div>
-                </div>
+        <section class="section section-2">
+            <div class="random_number_container"><span id="random_number">5</span></div>
+            <div class="flex_center | user_numbers_container">
+                <div class="flex_center | number | number_styling">1</div>
+                <div class="flex_center | number | number_styling">2</div>
+                <div class="flex_center | number | number_styling">3</div>
+                <div class="flex_center | number | number_styling">4</div>
+                <div class="flex_center | number | number_styling">5</div>
+                <div class="flex_center | number | number_styling">6</div>
+                <div class="flex_center | number | number_styling">7</div>
+                <div class="flex_center | number | number_styling">8</div>
+                <div class="flex_center | number | number_styling">9</div>
+                <div class="flex_center | number | number_styling">10</div>
             </div>
         </section>
-    </main>
     </main>
 </body>
+
 </html>
